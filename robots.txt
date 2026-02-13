@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://love.sproutern.com/sitemap.xml
+
+# Regional Targets
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

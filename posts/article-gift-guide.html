@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perfect Gift Guide | Love Lab</title>
+    <meta name="description"
+        content="Find the perfect gift for your partner with our curated gift guide for every relationship stage.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#ff0055',
+                        bg: '#050507',
+                        surface: 'rgba(255, 255, 255, 0.03)',
+                        text: '#f0f0f0',
+                        muted: '#888'
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #ff005515, transparent 40%), #050507;
+            color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .glass-card:hover {
+            border-color: #ff005544;
+            box-shadow: 0 20px 40px -10px #ff005522;
+            transform: translateY(-4px);
+        }
+
+        .prose h2 {
+            color: white;
+            border-left: 4px solid #ff0055;
+            padding-left: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #ff0055;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <nav class="sticky top-0 z-[100] glass border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="../index.html"
+                class="flex items-center gap-3 font-heading font-extrabold text-2xl tracking-tighter uppercase text-white hover:text-brand transition">
+                <span>&larr; Love Lab</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-4xl mx-auto w-full px-6 py-12">
+        <div class="glass-card p-8 md:p-12 mb-12">
+            <span class="text-brand text-xs font-bold uppercase tracking-widest mb-4 block">Shopping Guide</span>
+
+            <article class="prose max-w-none">
+                <h1 class="font-heading font-black text-4xl md:text-6xl mb-8 text-white leading-tight">Finding the <span
+                        class="text-brand">Perfect Gift</span></h1>
+
+                <p class="lead text-xl text-white/80 mb-8 border-b border-white/10 pb-8">Gift-giving is an art. It's not
+                    about the price tag, but the thought and effort behind it. Here is our guide to nailing it every
+                    time.</p>
+
+                <h2>The Memory Lane Gift</h2>
+                <p>Create a photo album or a framed map of where you first met. Gifts that commemorate your shared
+                    history are always hits because they are unique to your relationship.</p>
+
+                <h2>The Experience Gift</h2>
+                <p>Instead of a physical object, give an experience. Concert tickets, a cooking class, or a weekend
+                    getaway create memories that last longer than any gadget.</p>
+
+                <h2>The "Listen and Learn" Gift</h2>
+                <p>Pay attention to the small things they complain about or wish for. Did they mention their headphones
+                    are broken? Did they say they wanted to try painting? Fulfilling a specific need shows you listen.
+                </p>
+
+                <h2>The Personalized Touch</h2>
+                <p>Anything personalized—from jewelry with initials to a custom-made book—shows extra effort. It
+                    transforms a generic item into a keepsake.</p>
+
+                <div class="bg-brand/10 border-l-4 border-brand p-6 my-8 rounded-r-lg">
+                    <p class="text-white font-medium italic mb-0">"The manner of giving is worth more than the gift." —
+                        Pierre Corneille</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-black py-16 px-6 border-t border-white/5 text-center">
+        <p class="text-white/20 text-[10px] uppercase tracking-widest">© 2026 Love Lab. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

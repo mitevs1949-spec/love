@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Love Letters | Love Lab</title>
+    <meta name="description" content="Learn how to write a heartfelt love letter that will cherish forever.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#ff0055',
+                        bg: '#050507',
+                        surface: 'rgba(255, 255, 255, 0.03)',
+                        text: '#f0f0f0',
+                        muted: '#888'
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #ff005515, transparent 40%), #050507;
+            color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .glass-card:hover {
+            border-color: #ff005544;
+            box-shadow: 0 20px 40px -10px #ff005522;
+            transform: translateY(-4px);
+        }
+
+        .prose h2 {
+            color: white;
+            border-left: 4px solid #ff0055;
+            padding-left: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #ff0055;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <nav class="sticky top-0 z-[100] glass border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="../index.html"
+                class="flex items-center gap-3 font-heading font-extrabold text-2xl tracking-tighter uppercase text-white hover:text-brand transition">
+                <span>&larr; Love Lab</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-4xl mx-auto w-full px-6 py-12">
+        <div class="glass-card p-8 md:p-12 mb-12">
+            <span class="text-brand text-xs font-bold uppercase tracking-widest mb-4 block">Timeless Romance</span>
+
+            <article class="prose max-w-none">
+                <h1 class="font-heading font-black text-4xl md:text-6xl mb-8 text-white leading-tight">The Art of <span
+                        class="text-brand">Love Letters</span></h1>
+
+                <p class="lead text-xl text-white/80 mb-8 border-b border-white/10 pb-8">In a digital age of texts and
+                    DMs, a handwritten love letter stands out as a powerful gesture of affection.</p>
+
+                <h2>Why Write a Letter?</h2>
+                <p>A letter is tangible. It's something your partner can hold, keep, and reread years later. It requires
+                    time and thought, which makes it inherently valuable.</p>
+
+                <h2>How to Start</h2>
+                <p>Don't worry about being a poet. Start simply. "I was thinking about you and..." is a perfect opening.
+                    Be specific about what you appreciate about them.</p>
+
+                <h2>Focus on Feelings, Not Just Facts</h2>
+                <p>Instead of listing things you did ("We went to dinner"), describe how you felt ("I loved watching you
+                    laugh at dinner"). Vulnerability is the key to a great love letter.</p>
+
+                <h2>The Delivery</h2>
+                <p>Leave it on their pillow, hide it in their bag, or mail it—even if you live together! The surprise of
+                    finding it adds to the romance.</p>
+
+                <div class="bg-brand/10 border-l-4 border-brand p-6 my-8 rounded-r-lg">
+                    <p class="text-white font-medium italic mb-0">"Letters are the only way to safeguard the permanence
+                        of love."</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-black py-16 px-6 border-t border-white/5 text-center">
+        <p class="text-white/20 text-[10px] uppercase tracking-widest">© 2026 Love Lab. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
